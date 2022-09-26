@@ -1,0 +1,39 @@
+.button {
+  display: inline-flex;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 10px 20px;
+
+  font-size: 12px;
+  line-height: 14px;
+
+  color: $color-default-white;
+  justify-content: center;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+
+  background-color: $color-transparent;
+  border: 4px solid $color-default-white;
+  cursor: pointer;
+  user-select: none;
+
+  &--white {
+    padding: 19px 55px;
+    justify-self: end;
+
+    @include vp-1199 {
+      padding: 19px 30px;
+    }
+
+    @include vp-767 {
+      width: 100%;
+      padding: 20px 30px;
+    }
+  }
+
+  &:disabled {
+    opacity: 0.5;
+
+    pointer-events: none;
+  }
+}

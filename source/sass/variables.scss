@@ -10,12 +10,33 @@ $color-transparent:                 rgba(255, 255, 255, 0);
 // Project palette
 // для нейминга цветов используем https://www.htmlcsscolor.com/hex/334482
 
-$color-neon-blue:                   #2c39f2;
-$color-torch-red:                   #ff1553;
+$color-dark-cerulean:              rgba(0, 61, 133, 1);
+$color-venetian-red:                rgba(184, 0, 39, 1);
+$color-lucky-point:                 rgba(39, 43, 96, 1);
+$color-ghost-white:                 rgba(248, 249, 252, 1);
+$color-crimson:                     rgba(209, 10, 66, 1);
+$color-smalt:                       rgba(0, 53, 159, 1);
+$color-torch-red:                   rgba(237, 2, 51, 1);
+$color-cobalt:                      rgba(0, 62, 183, 1);
+$color-cobalt-2:                    rgba(0, 65, 202, 1);
+$color-egyptian-blue:               rgba(16, 58, 174, 1);
+$color-sapphire:                    rgba(16, 38, 84, 1);
+$color-sapphire-05:                 rgba(16, 38, 84, 0.5);
+$color-sapphire-089:                rgba(16, 38, 84, 0.89);
+$color-chambray:                    rgba(73, 90, 125, 1);
+$color-whisper:                     rgba(232, 232, 232, 1);
+$color-resolution-blue:             rgba(28, 51, 116, 1);
+$color-light-slate-grey:            rgba(116, 129, 156, 1);
+$color-black-russian:               rgba(3, 10, 26, 1);
 
 // Gradient
 
 $black-to-right:                    linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
+$dark-cherulean-to-venetian-red:    conic-gradient(from 130.31deg at 16.03% 39.06%, rgba(184, 0, 39, 1) -46.69deg, rgba(0, 61, 133, 1) 32.24deg, rgba(184, 0, 39, 1) 313.31deg, rgba(0, 61, 133, 1) 392.24deg);
+$crimson-to-smalt:                  linear-gradient(148.82deg, rgba(209, 10, 66, 1) 0.85%, rgba(0, 53, 159, 1) 100%);
+$torch-red-to-cobalt:               linear-gradient(97.05deg, rgba(237, 2, 5, 1) 17.6%, rgba(0, 62, 183, 1) 95.31%);
+$crimson-to-cobalt-2:               linear-gradient(127.61deg, rgba(209, 10, 66, 1) 0%, rgba(0, 65, 202, 1) 45.58%);
+
 
 // Typography
 // ---------------------------------
@@ -27,7 +48,9 @@ $fz-default:                        16px;
 // https://www.artlebedev.ru/kovodstvo/sections/159/#13
 $ff-rouble:                         "Rouble", "Arial", sans-serif;
 
-$ff-placeholder:                    "Placeholder", "Arial", sans-serif;
+$ff-roboto-condensed:               "Roboto Condensed", "Arial", sans-serif;
+$ff-bebas-neue:                     "Bebas Neue", "Arial", sans-serif;
+
 
 // Animation
 // ---------------------------------
@@ -47,6 +70,7 @@ $vp-320:                            320px;
 $vp-375:                            375px;
 $vp-768:                            768px;
 $vp-1024:                           1024px;
+$vp-1200:                           1200px;
 $vp-1280:                           1280px;
 $vp-1440:                           1440px;
 $vp-1920:                           1920px;
