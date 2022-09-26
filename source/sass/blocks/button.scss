@@ -16,10 +16,29 @@
   border: 4px solid $color-default-white;
   cursor: pointer;
   user-select: none;
+  transition: box-shadow 0.3s;
+  outline-color: transparent;
+
+  &:disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 0 10px $color-default-white;
+    transition: all 0.3s;
+  }
 
   &--white {
     padding: 19px 55px;
     justify-self: end;
+
+    &:hover,
+    &:focus {
+      background-color: $color-default-white;
+      color: $color-sapphire;
+    }
 
     @include vp-1199 {
       padding: 19px 30px;
@@ -29,11 +48,5 @@
       width: 100%;
       padding: 20px 30px;
     }
-  }
-
-  &:disabled {
-    opacity: 0.5;
-
-    pointer-events: none;
   }
 }

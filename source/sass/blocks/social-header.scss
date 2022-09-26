@@ -1,3 +1,19 @@
 .social-header__item {
-  
+  margin-bottom: 13px;
+}
+
+.social-header__item a {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: box-shadow 0.3s;
+  outline-color: transparent;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 0 10px $color-default-white;
+    transition: all 0.3s;
+  }
 }

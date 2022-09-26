@@ -682,6 +682,26 @@ button,
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  -webkit-transition: -webkit-box-shadow 0.3s;
+  transition: -webkit-box-shadow 0.3s;
+  -o-transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
+  outline-color: transparent;
+}
+
+.button:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.button:hover,
+.button:focus {
+  -webkit-box-shadow: 0 0 10px #ffffff;
+  box-shadow: 0 0 10px #ffffff;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .button--white {
@@ -690,9 +710,10 @@ button,
   justify-self: end;
 }
 
-.button:disabled {
-  opacity: 0.5;
-  pointer-events: none;
+.button--white:hover,
+.button--white:focus {
+  background-color: #ffffff;
+  color: #102654;
 }
 
 .header {
@@ -730,9 +751,8 @@ button,
   font-size: 26px;
   line-height: 26px;
   letter-spacing: 0.03em;
-  -webkit-transition: text-shadow 0.3s;
-  -o-transition: text-shadow 0.3s;
-  transition: text-shadow 0.3s;
+  outline-color: transparent;
+  outline-offset: 2px;
 }
 
 .header__main {
@@ -843,6 +863,39 @@ button,
   width: 100%;
 }
 
+.social-header__item {
+  margin-bottom: 13px;
+}
+
+.social-header__item a {
+  width: 20px;
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transition: -webkit-box-shadow 0.3s;
+  transition: -webkit-box-shadow 0.3s;
+  -o-transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
+  outline-color: transparent;
+}
+
+.social-header__item a:hover,
+.social-header__item a:focus {
+  -webkit-box-shadow: 0 0 10px #ffffff;
+  box-shadow: 0 0 10px #ffffff;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
 /* @media (hover: hover), screen and (min-width: 0\0) {
   &:hover,
   &:focus {
@@ -871,6 +924,12 @@ button,
   .header__logo {
     margin-left: 0;
     margin-top: 2px;
+  }
+
+  .header__phone-link {
+    font-size: 24px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
   }
 
   .header__description {
@@ -936,6 +995,12 @@ button,
   .header__container {
     padding-top: 20px;
     padding-bottom: 79px;
+  }
+
+  .header__phone-link {
+    font-size: 20px;
+    line-height: 19px;
+    padding-left: 90px;
   }
 
   .header__description {
