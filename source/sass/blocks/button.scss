@@ -4,13 +4,14 @@
   margin: 0;
   padding: 10px 20px;
 
+  font-weight: 700;
   font-size: 12px;
   line-height: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 
   color: $color-default-white;
   justify-content: center;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
 
   background-color: $color-transparent;
   border: 4px solid $color-default-white;
@@ -48,5 +49,11 @@
       width: 100%;
       padding: 20px 30px;
     }
+  }
+
+  &--sapphire {
+    padding: 26px 46px;
+    color: $color-sapphire;
+    box-shadow: 0 0 0 2px $color-sapphire inset;
   }
 }

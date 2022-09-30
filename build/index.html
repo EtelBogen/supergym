@@ -18,7 +18,7 @@
       <header class="header">
         <div class="container header__container">
           <div class="header__top">
-            <a class="header__logo" aria-label="Логотип фитнес-центра Supergym">
+            <a class="header__logo" aria-label="Логотип фитнес-центра Supergym.">
               <svg class="logo" width="89" height="20">
                 <use xlink:href="img/sprite_auto.svg#logo-supergym"></use>
               </svg>
@@ -45,12 +45,16 @@
 
             <div class="header__image-wrapper">
               <picture>
-                <!-- 1x: 500px; 2x: 1000px-->
                 <source type="image/webp" srcset="img/jpg/header-picture@1x.webp 1x, img/jpg/header-picture@2x.webp 2x">
+                <!-- 1x: 500px; 2x: 1000px-->
                 <img src="img/jpg/header-picture@1x.jpg" srcset="img/jpg/header-picture@2x.jpg 2x" width="500" height="556" alt="Фото спортсмена.">
               </picture>
             </div>
-            <div class="header__social">
+
+            <section class="header__social">
+              <h2 class="visually-hidden">
+                Ссылки на наши соцсети
+              </h2>
               <ul class="header__social-list social-header list-reset">
                 <li class="social-header__item">
                   <a href="#" aria-label="Мы в Фейсбук">
@@ -74,59 +78,315 @@
                   </a>
                 </li>
               </ul>
-            </div>
+            </section>
           </div>
         </div>
       </header>
 
       <main>
+        <section class="gym section" id="gym">
+          <div class="container gym__container">
+            <div class="gym__description">
+              <h2>
+                Тренажерный зал
+              </h2>
+              <p>
+                Просторный зал площадью 900 кв/м
+              </p>
+              <p>
+                Supergym&nbsp;&mdash; самый большой фитнес центр за&nbsp;Уралом и&nbsp;идеальное место для укрепления тела и&nbsp;здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.
+              </p>
+              <p>
+                В&nbsp;зале расположены отдельная зона для Crossfit и&nbsp;кардио-зона с&nbsp;40&nbsp;тренажерами. Также в&nbsp;фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.
+              </p>
+            </div>
+            <div class="gym__image-wrapper">
+              <picture>
+                <source type="image/webp" srcset="img/jpg/gym@1x.webp 1x, img/jpg/gym@2x.webp 2x">
+                <!-- 1x: 660px; 2x: 1320px-->
+                <img src="img/jpg/gym@1x.jpg" srcset="img/jpg/gym@2x.jpg 2x" width="660" height="401" alt="Фото зала с тренажерами.">
+              </picture>
+            </div>
+            <div class="gym__video-wrapper gym-video" data-video>
+              <div class="gym-video__poster-wrapper">
+                <picture>
+                  <source type="image/webp" srcset="img/jpg/video-poster@1x.webp 1x, img/jpg/video-poster@2x.webp 2x">
+                  <!-- 1x: 364px; 2x: 728px-->
+                  <img src="img/jpg/video-poster@1x.jpg" srcset="img/jpg/video-poster@2x.jpg 2x" width="364" height="228" alt="Постер для видео с видом зала с тренажерами.">
+                </picture>
+                <button type="button">
+                  <span class="visually-hidden">Начать просмотр видео.</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="gym-membership section" id="gym-membership">
+          <div class="container gym-membership__container">
+            <h2>
+              Абонементы
+            </h2>
+            <ul class="gym-membership__tab-time-list tab-time-list list-reset">
+              <li>
+                <button class="tab-time-list__button tab-time-list__button--active" type="button" data-tab="#tab_1-month">
+                  1 месяц
+                </button>
+              </li>
+              <li>
+                <button class="tab-time-list__button" type="button" data-tab="#tab_6-months">
+                  6 месяцев
+                </button>
+              </li>
+              <li>
+                <button class="tab-time-list__button" type="button" data-tab="#tab_12-months">
+                  12 месяцев
+                </button>
+              </li>
+            </ul>
+
+            <ul class="gym-membership__tab-content-list gym-membership__tab-content-list--active list-reset" id="tab_1-month">
+              <li class="tab-content-card">
+                <h3>
+                  С тренером
+                </h3>
+                <p>
+                  12 занятий
+                </p>
+                <p class="tab-content-card__price" data-price="5000">
+                  5000
+                  <svg width="30" height="42" xmlns="http://www.w3.org/2000/svg" aria-label="рублей">
+                    <use xlink:href="img/sprite_auto.svg#icon-ruble"></use>
+                  </svg>
+                </p>
+                <a class="button button--sapphire" href="#">Купить абонемент</a>
+              </li>
+              <li class="tab-content-card">
+                <h3>
+                  Дневной
+                </h3>
+                <p>
+                  с
+                  <time datetime="08:00">8:00</time>
+                  до
+                  <time datetime="17:00">17:00</time>
+                </p>
+                <p class="tab-content-card__price" data-price="1700">
+                  1700
+                  <svg width="30" height="42" xmlns="http://www.w3.org/2000/svg" aria-label="рублей">
+                    <use xlink:href="img/sprite_auto.svg#icon-ruble"></use>
+                  </svg>
+                </p>
+                <a class="button button--sapphire" href="#">Купить абонемент</a>
+              </li>
+              <li class="tab-content-card">
+                <h3>
+                  Полный день
+                </h3>
+                <p>
+                  с
+                  <time datetime="08:00">8:00</time>
+                  до
+                  <time datetime="22:00">22:00</time>
+                </p>
+                <p class="tab-content-card__price" data-price="2700">
+                  2700
+                  <svg width="30" height="42" xmlns="http://www.w3.org/2000/svg" aria-label="рублей">
+                    <use xlink:href="img/sprite_auto.svg#icon-ruble"></use>
+                  </svg>
+                </p>
+                <a class="button button--sapphire" href="#">Купить абонемент</a>
+              </li>
+            </ul>
+
+            <ul class="gym-membership__tab-content-list list-reset" id="tab_6-months">
+              <li class="tab-content-card">
+                <h3>
+                  С тренером
+                </h3>
+                <p>
+                  12 занятий
+                </p>
+                <p class="tab-content-card__price" data-price="8000">
+                  8000
+                  <svg width="30" height="42" xmlns="http://www.w3.org/2000/svg" aria-label="рублей">
+                    <use xlink:href="img/sprite_auto.svg#icon-ruble"></use>
+                  </svg>
+                </p>
+                <a class="button button--sapphire" href="#">Купить абонемент</a>
+              </li>
+              <li class="tab-content-card">
+                <h3>
+                  Дневной
+                </h3>
+                <p>
+                  с
+                  <time datetime="08:00">8:00</time>
+                  до
+                  <time datetime="17:00">17:00</time>
+                </p>
+                <p class="tab-content-card__price" data-price="23000">
+                  23000
+                  <svg width="30" height="42" xmlns="http://www.w3.org/2000/svg" aria-label="рублей">
+                    <use xlink:href="img/sprite_auto.svg#icon-ruble"></use>
+                  </svg>
+                </p>
+                <a class="button button--sapphire" href="#">Купить абонемент</a>
+              </li>
+              <li class="tab-content-card">
+                <h3>
+                  Полный день
+                </h3>
+                <p>
+                  с
+                  <time datetime="08:00">8:00</time>
+                  до
+                  <time datetime="22:00">22:00</time>
+                </p>
+                <p class="tab-content-card__price" data-price="7500">
+                  7500
+                  <svg width="30" height="42" xmlns="http://www.w3.org/2000/svg" aria-label="рублей">
+                    <use xlink:href="img/sprite_auto.svg#icon-ruble"></use>
+                  </svg>
+                </p>
+                <a class="button button--sapphire" href="#">Купить абонемент</a>
+              </li>
+            </ul>
+
+            <ul class="gym-membership__tab-content-list list-reset" id="tab_12-months">
+              <li class="tab-content-card">
+                <h3>
+                  С тренером
+                </h3>
+                <p>
+                  12 занятий
+                </p>
+                <p class="tab-content-card__price" data-price="35000">
+                  35000
+                  <svg width="30" height="42" xmlns="http://www.w3.org/2000/svg" aria-label="рублей">
+                    <use xlink:href="img/sprite_auto.svg#icon-ruble"></use>
+                  </svg>
+                </p>
+                <a class="button button--sapphire" href="#">Купить абонемент</a>
+              </li>
+              <li class="tab-content-card">
+                <h3>
+                  Дневной
+                </h3>
+                <p>
+                  с
+                  <time datetime="08:00">8:00</time>
+                  до
+                  <time datetime="17:00">17:00</time>
+                </p>
+                <p class="tab-content-card__price" data-price="11700">
+                  11700
+                  <svg width="30" height="42" xmlns="http://www.w3.org/2000/svg" aria-label="рублей">
+                    <use xlink:href="img/sprite_auto.svg#icon-ruble"></use>
+                  </svg>
+                </p>
+                <a class="button button--sapphire" href="#">Купить абонемент</a>
+              </li>
+              <li class="tab-content-card">
+                <h3>
+                  Полный день
+                </h3>
+                <p>
+                  с
+                  <time datetime="08:00">8:00</time>
+                  до
+                  <time datetime="22:00">22:00</time>
+                </p>
+                <p class="tab-content-card__price" data-price="19000">
+                 19000
+                  <svg width="30" height="42" xmlns="http://www.w3.org/2000/svg" aria-label="рублей">
+                    <use xlink:href="img/sprite_auto.svg#icon-ruble"></use>
+                  </svg>
+                </p>
+                <a class="button button--sapphire" href="#">Купить абонемент</a>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="events">
+          <div class="container events__container">
+            <div class="events__description">
+              <div class="events__description-wrapper">
+                <h2>
+                  Super<br>Games
+                </h2>
+                <dl class="events__info-list list-reset">
+                  <dt>
+                    Дата
+                  </dt>
+                  <dd>
+                    7 <small>марта<br> 2019</small>
+                  </dd>
+                  <dt>
+                    Время
+                  </dt>
+                  <dd>
+                    12:00
+                  </dd>
+                </dl>
+                <p>Ежегодные соревнования по&nbsp;CrossFit</p>
+                <a class="btn btn--clear-white-first" href="#">заполнить заявку</a>
+              </div>
+            </div>
+            <div class="events__image-container">
+              <picture>
+                <source type="image/webp" srcset="img/jpg/super-games@1x.webp 1x, img/jpg/super-games@2x.webp 2x">
+                <!-- 1x: 660px; 2x: 1320px-->
+                <img src="img/jpg/super-games@1x.jpg" rcset="img/jpg/super-games@2x.jpg 2x" width="660" height="500" alt="Иллюстрация со спортсменом.">
+              </picture>
+            </div>
+          </div>
+        </section>
 
       </main>
 
       <footer class="footer">
         <div class="container footer__container">
-          <a class="footer__logo">
-            <svg class="logo-icon" width="89" height="20" xmlns="http://www.w3.org/2000/svg" aria-label="Логотип Supergym.">
-              <use xlink:href="img/sprite_auto.svg#logo"></use>
-            </svg>
-          </a>
-
           <nav class="footer__navigation">
+            <a class="footer__logo">
+              <svg class="logo" width="89" height="20" xmlns="http://www.w3.org/2000/svg" aria-label="Логотип фитнес-центра Supergym.">
+                <use xlink:href="img/sprite_auto.svg#logo-supergym"></use>
+              </svg>
+            </a>
+
             <h2 class="visually-hidden">
               Навигация по сайту
             </h2>
-            <ul class="navigation-list list-reset">
-              <li class="navigation-list-list__item">
-              </li>
-              <li class="navigation-list-list__item">
-                <a href="#">
+
+            <ul class="footer__navigation-list navigation list-reset">
+              <li class="navigation__item">
+                <a href="#gym">
                   Услуги
                 </a>
               </li>
-              <li class="navigation-list-list__item">
+              <li class="navigation__item">
                 <a href="#gym-membership" data-anchor>
                   Абонементы
                 </a>
               </li>
-              <li class="navigation-list-list__item">
+              <li class="navigation__item">
                 <a href="#promotions" data-anchor>
                   Акции
                 </a>
               </li>
-              <li class="navigation-list-list__item">
+              <li class="navigation__item">
                 <a href="#trainers" data-anchor>
                   Тренеры
                 </a>
               </li>
-              <li class="navigation-list-list__item">
+              <li class="navigation__item">
                 <a href="#">
                   Расписание
                 </a>
               </li>
             </ul>
-          </nav>
 
-          <section>
             <h2 class="visually-hidden">
               Ссылки на наши соцсети
             </h2>
@@ -153,7 +413,7 @@
                 </a>
               </li>
             </ul>
-          </section>
+          </nav>
         </div>
       </footer>
     </div>

@@ -1,0 +1,85 @@
+.gym-video {
+  width: 364px;
+  height: 228px;
+
+  @include vp-1199 {
+    width: 266px;
+    height: 167px;
+  }
+}
+
+.gym-video iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.gym-video__poster-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: $color-dark-cerulean-shadow;
+  }
+}
+
+.gym-video__poster-wrapper img {
+  position: absolute;
+  max-width: none;
+  width: 364px;
+  height: 228px;
+  object-fit: cover;
+
+  @include vp-1199 {
+    width: 266px;
+    height: 167px;
+  }
+
+  @include vp-767 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+  }
+
+  @include vp-374 {
+    height: 167px;
+  }
+}
+
+.gym-video__poster-wrapper button {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  background: url("../img/svg/video-button.svg") no-repeat;
+  transform: translate(-50%, -50%);
+  border: none;
+  z-index: 1;
+  cursor: pointer;
+
+  &:hover {
+    scale: 1.05;
+    opacity: 0.8;
+  }
+
+  @include vp-1199 {
+    width: 73px;
+    height: 73px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-size: 73px 73px;
+  }
+}

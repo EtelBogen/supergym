@@ -667,14 +667,15 @@ button,
   vertical-align: baseline;
   margin: 0;
   padding: 10px 20px;
+  font-weight: 700;
   font-size: 12px;
   line-height: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
   color: #ffffff;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
   background-color: rgba(255, 255, 255, 0);
   border: 4px solid #ffffff;
   cursor: pointer;
@@ -714,6 +715,238 @@ button,
 .button--white:focus {
   background-color: #ffffff;
   color: #102654;
+}
+
+.button--sapphire {
+  padding: 26px 46px;
+  color: #102654;
+  -webkit-box-shadow: 0 0 0 2px #102654 inset;
+  box-shadow: 0 0 0 2px #102654 inset;
+}
+
+.footer {
+  background-color: #030a1a;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-top: auto;
+}
+
+.footer__container {
+  padding-top: 41px;
+  padding-bottom: 35px;
+}
+
+.footer__navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.footer__navigation-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.footer__social-list {
+  text-align: end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.footer__social-list li:hover {
+  opacity: 0.8;
+}
+
+.footer__social-list li:not(:last-child) {
+  margin-right: 11px;
+}
+
+.gym-membership {
+  position: relative;
+  overflow: hidden;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(92%, #f8f9fc), color-stop(92%, rgba(255, 255, 255, 0)));
+  background: -o-linear-gradient(#f8f9fc 92%, rgba(255, 255, 255, 0) 92%);
+  background: linear-gradient(#f8f9fc 92%, rgba(255, 255, 255, 0) 92%);
+}
+
+.gym-membership::before {
+  content: "";
+  position: absolute;
+  bottom: -76px;
+  right: -183px;
+  width: 470px;
+  height: 494px;
+  background: url("../img/png/equipment.png") no-repeat;
+}
+
+.gym-membership__container {
+  padding-top: 118px;
+  padding-bottom: 195px;
+  text-align: center;
+}
+
+.gym-membership h2 {
+  margin-bottom: 22px;
+}
+
+.gym-membership__tab-time-list {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 38px;
+}
+
+.gym-membership__tab-content-list {
+  display: none;
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.gym-membership__tab-content-list--active {
+  display: -ms-grid;
+  display: grid;
+}
+
+.gym-video {
+  width: 364px;
+  height: 228px;
+}
+
+.gym-video iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.gym-video__poster-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.gym-video__poster-wrapper::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(20, 54, 122, 0.5);
+}
+
+.gym-video__poster-wrapper img {
+  position: absolute;
+  max-width: none;
+  width: 364px;
+  height: 228px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.gym-video__poster-wrapper button {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  background: url("../img/svg/video-button.svg") no-repeat;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border: none;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.gym-video__poster-wrapper button:hover {
+  scale: 1.05;
+  opacity: 0.8;
+}
+
+.gym__container {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 5fr 7fr;
+  grid-template-columns: 5fr 7fr;
+  -webkit-column-gap: 28px;
+  -moz-column-gap: 28px;
+  column-gap: 28px;
+  padding-top: 120px;
+  padding-bottom: 215px;
+}
+
+.gym__description {
+  margin: 47px 55px auto 60px;
+}
+
+.gym__description h2 {
+  margin-bottom: 8px;
+}
+
+.gym__description p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #102654;
+  margin: 0;
+}
+
+.gym__description p:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.gym__description p:first-of-type {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 400;
+  color: #102654;
+  margin-bottom: 39px;
+}
+
+.gym__image-wrapper {
+  position: relative;
+  -ms-flex-item-align: start;
+  -ms-grid-row-align: start;
+  align-self: start;
+  overflow: hidden;
+  max-width: 660px;
+  min-height: 401px;
+  margin-bottom: 20px;
+}
+
+.gym__image-wrapper img {
+  position: absolute;
+  max-width: none;
+  width: 660px;
+  height: 441px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  bottom: -3px;
+  left: 0;
+}
+
+.gym__video-wrapper {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-39.3%);
+  -ms-transform: translateX(-39.3%);
+  transform: translateX(-39.3%);
+  top: 408px;
 }
 
 .header {
@@ -854,6 +1087,43 @@ button,
   height: 20px;
 }
 
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-left: 50px;
+}
+
+.navigation__item {
+  margin-right: 40px;
+}
+
+.navigation__item:last-child {
+  margin-right: 0;
+}
+
+.navigation__item a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 16px;
+  outline-color: transparent;
+  -webkit-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+.navigation__item a:hover,
+.navigation__item a:focus {
+  opacity: 0.7;
+  -webkit-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
 .page__body {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 16px;
@@ -861,6 +1131,17 @@ button,
   color: #102654;
   min-width: 320px;
   width: 100%;
+}
+
+.section h2 {
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-size: 49px;
+  line-height: 49px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: #102654;
+  text-transform: uppercase;
+  margin: 0;
 }
 
 .social-header__item {
@@ -896,6 +1177,134 @@ button,
   transition: all 0.3s;
 }
 
+.tab-content-card {
+  position: relative;
+  min-height: 448px;
+  text-align: center;
+  padding: 56px 20px;
+  background-color: #ffffff;
+  border: 7px solid transparent;
+}
+
+.tab-content-card:hover {
+  -o-border-image: -o-linear-gradient(301.18deg, #d10a42 0.85%, #00359f 100%);
+  border-image: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%);
+  border-image-slice: 1;
+}
+
+.tab-content-card:hover a {
+  color: #ffffff;
+  background: -o-linear-gradient(352.95deg, #ed0205 17.6%, #003eb7 95.31%);
+  background: linear-gradient(97.05deg, #ed0205 17.6%, #003eb7 95.31%);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.tab-content-card p:first-of-type {
+  margin: 0 0 65px;
+  color: #495a7d;
+}
+
+.tab-content-card__price {
+  margin: 0 0 30px;
+  font-size: 60px;
+  line-height: 90px;
+  font-weight: 700;
+  color: #103aae;
+  position: relative;
+  z-index: 1;
+}
+
+.tab-content-card__price::before {
+  content: attr(data-price);
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  font-size: 100px;
+  line-height: 150px;
+  font-weight: 700;
+  color: #e8e8e8;
+  z-index: -1;
+}
+
+.tab-content-card__price svg {
+  position: relative;
+  z-index: 1;
+}
+
+.tab-content-card h3 {
+  font-size: 26px;
+  line-height: 28px;
+  margin: 0 0 11px;
+  color: #102654;
+}
+
+.tab-time-list {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  vertical-align: baseline;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.tab-time-list::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: rgba(120, 120, 120, 0.2);
+}
+
+.tab-time-list li:not(:last-child) {
+  margin-right: 47px;
+}
+
+.tab-time-list__button {
+  position: relative;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+  color: rgba(16, 38, 84, 0.5);
+  margin: 0;
+  border: none;
+  padding: 13px 0;
+  background-color: rgba(255, 255, 255, 0);
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.tab-time-list__button:hover {
+  opacity: 0.8;
+}
+
+.tab-time-list__button--active {
+  color: #102654;
+}
+
+.tab-time-list__button--active::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #d10a42;
+}
+
+.tab-time-list button:last-of-type {
+  padding-right: 3px;
+}
+
 /* @media (hover: hover), screen and (min-width: 0\0) {
   &:hover,
   &:focus {
@@ -910,6 +1319,138 @@ button,
 
   .button--white {
     padding: 19px 30px;
+  }
+
+  .footer__container {
+    padding-top: 45px;
+    padding-bottom: 37px;
+  }
+
+  .gym-membership {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(96%, #f8f9fc), color-stop(96%, rgba(255, 255, 255, 0)));
+    background: -o-linear-gradient(#f8f9fc 96%, rgba(255, 255, 255, 0) 96%);
+    background: linear-gradient(#f8f9fc 96%, rgba(255, 255, 255, 0) 96%);
+  }
+
+  .gym-membership::before {
+    width: 470px;
+    height: 494px;
+    bottom: -101px;
+    right: -120px;
+    background-size: 428px 443px;
+  }
+
+  .gym-membership__container {
+    padding: 99px 163px 175px;
+  }
+
+  .gym-membership h2 {
+    margin-bottom: 16px;
+  }
+
+  .gym-membership__tab-time-list {
+    margin-bottom: 43px;
+  }
+
+  .gym-membership__tab-content-list {
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .gym-membership__tab-content-list--active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .gym-membership__tab-content-list li:not(:last-child) {
+    margin-bottom: 40px;
+  }
+
+  .gym-video {
+    width: 266px;
+    height: 167px;
+  }
+
+  .gym-video__poster-wrapper img {
+    width: 266px;
+    height: 167px;
+  }
+
+  .gym-video__poster-wrapper button {
+    width: 73px;
+    height: 73px;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-size: 73px 73px;
+  }
+
+  .gym__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-column-gap: 0;
+    -moz-column-gap: 0;
+    column-gap: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin: 0 auto;
+    padding-top: 99px;
+    padding-bottom: 183px;
+  }
+
+  .gym__description {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .gym__description h2 {
+    margin-bottom: 9px;
+  }
+
+  .gym__description p {
+    margin: auto 80px auto;
+  }
+
+  .gym__description p:first-of-type {
+    margin-bottom: 34px;
+  }
+
+  .gym__description p:last-of-type {
+    display: none;
+  }
+
+  .gym__image-wrapper {
+    width: 100%;
+    min-height: auto;
+    max-width: 678px;
+    height: 345px;
+    margin: 35px auto auto;
+  }
+
+  .gym__image-wrapper img {
+    width: 774px;
+    height: 403px;
+    bottom: -39px;
+    left: -94px;
+  }
+
+  .gym__video-wrapper {
+    top: auto;
+    bottom: 100px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
   }
 
   .header {
@@ -975,6 +1516,29 @@ button,
     width: 82px;
     height: 18px;
   }
+
+  .navigation {
+    margin-left: 35px;
+  }
+
+  .navigation__item {
+    margin-right: 30px;
+  }
+
+  .section h2 {
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  .tab-time-list li:not(:last-child) {
+    margin-right: 55px;
+  }
+
+  .tab-time-list__button {
+    font-size: 18px;
+    line-height: 27px;
+    padding: 14px 0;
+  }
 }
 
 @media (max-width: 767px) {
@@ -986,6 +1550,116 @@ button,
   .button--white {
     width: 100%;
     padding: 20px 30px;
+  }
+
+  .footer {
+    position: relative;
+  }
+
+  .footer__container {
+    padding-top: 46px;
+    padding-bottom: 45px;
+  }
+
+  .footer__logo {
+    position: absolute;
+    left: 15px;
+    top: 45px;
+  }
+
+  .footer__navigation {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .footer__navigation-list {
+    min-width: 305px;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+  }
+
+  .footer__social-list {
+    margin-top: 25px;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+  }
+
+  .gym-membership::before {
+    content: none;
+  }
+
+  .gym-membership__container {
+    padding: 69px 15px 133px;
+  }
+
+  .gym-membership h2 {
+    margin-bottom: 8px;
+  }
+
+  .gym-membership__tab-time-list {
+    margin-bottom: 34px;
+  }
+
+  .gym-membership__tab-content-list li:not(:last-child) {
+    margin-bottom: 35px;
+  }
+
+  .gym-video__poster-wrapper img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+  }
+
+  .gym__container {
+    padding: 69px 0 70px 0;
+  }
+
+  .gym__description {
+    text-align: start;
+    margin: 0 15px;
+  }
+
+  .gym__description h2 {
+    margin-bottom: 6px;
+  }
+
+  .gym__description p {
+    margin: 0 27px 0 0;
+  }
+
+  .gym__description p:first-of-type {
+    margin-bottom: 24px;
+    margin-right: 10px;
+  }
+
+  .gym__image-wrapper {
+    max-width: 100%;
+    min-height: 313px;
+    width: 100%;
+    height: 100%;
+    margin-top: 24px;
+    margin-bottom: 40px;
+  }
+
+  .gym__image-wrapper img {
+    position: absolute;
+    max-width: 774px;
+    height: 313px;
+    left: auto;
+    bottom: 0;
+    right: -18px;
+  }
+
+  .gym__video-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    bottom: auto;
   }
 
   .header {
@@ -1032,5 +1706,97 @@ button,
   .logo {
     width: 68px;
     height: 15px;
+  }
+
+  .navigation {
+    display: block;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    margin-left: 0;
+  }
+
+  .navigation__item {
+    margin-top: 21px;
+  }
+
+  .navigation__item:first-child {
+    margin-top: 40px;
+  }
+
+  .navigation__item a {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .section h2 {
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .tab-content-card {
+    min-height: 384px;
+    padding: 44px 20px 20px;
+  }
+
+  .tab-content-card p:first-of-type {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 52px;
+  }
+
+  .tab-content-card__price {
+    font-size: 48px;
+    line-height: 72px;
+    margin: 0 0 26px 4px;
+  }
+
+  .tab-content-card__price::before {
+    font-size: 80px;
+    line-height: 120px;
+    bottom: -6px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+
+  .tab-content-card__price svg {
+    width: 24px;
+    height: 33px;
+  }
+
+  .tab-content-card h3 {
+    font-size: 22px;
+    line-height: 24px;
+  }
+
+  .tab-time-list li:not(:last-child) {
+    margin-right: 38px;
+  }
+
+  .tab-time-list li:last-child h3 {
+    padding-right: 2px;
+  }
+
+  .tab-time-list__button {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 14px 5px 14px 1px;
+  }
+
+  .tab-time-list button:last-of-type {
+    padding-right: 4px;
+  }
+}
+
+@media (max-width: 374px) {
+  .gym-video__poster-wrapper img {
+    height: 167px;
+  }
+
+  .gym__video-wrapper {
+    width: 100%;
+    height: 167px;
   }
 }
