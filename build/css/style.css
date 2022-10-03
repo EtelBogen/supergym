@@ -1947,6 +1947,11 @@ button,
   margin-top: 30px;
 }
 
+.events__description a:hover,
+.events__description a:focus {
+  color: #ed0233;
+}
+
 .events__info-list {
   color: #ffffff;
 }
