@@ -56,4 +56,14 @@
     color: $color-sapphire;
     box-shadow: 0 0 0 2px $color-sapphire inset;
   }
+
+  &--underline {
+    display: inline-block;
+    border: none;
+    color: $color-resolution-blue;
+    text-transform: uppercase;
+    border-bottom: 1px solid $color-resolution-blue;
+    margin: 0;
+    padding: 0;
+  }
 }
