@@ -10,7 +10,7 @@
   &:hover,
   &:focus,
   &:active {
-    box-shadow: 0 0 35px rgba($color-gulf-blue, 0.17);
+    box-shadow: 0 0 35px $color-gulf-blue-02;
 
     &::after {
       content: "";
@@ -19,7 +19,7 @@
       height: 100%;
       top: 0;
       left: 0;
-      background-color: rgba($color-sapphire, 0.89);
+      background-color: $color-sapphire-089;
     }
 
     .trainer-card__description {

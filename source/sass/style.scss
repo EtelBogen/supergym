@@ -14,10 +14,13 @@
 @import "global/reboot";
 @import "global/utils";
 @import "global/container";
+@import "global/section";
 
 // Blocks
 // ---------------------------------
 
+@import "blocks/advantages-list";
+@import "blocks/advantages";
 @import "blocks/button";
 @import "blocks/events";
 @import "blocks/footer";
@@ -28,7 +31,6 @@
 @import "blocks/logo";
 @import "blocks/navigation";
 @import "blocks/page";
-@import "blocks/section";
 @import "blocks/social-header";
 @import "blocks/tab-content-card";
 @import "blocks/tab-time-list";

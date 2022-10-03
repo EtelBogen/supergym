@@ -1527,6 +1527,197 @@ button,
   padding: 0 103px;
 }
 
+.section h2 {
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-size: 49px;
+  line-height: 49px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: #102654;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.advantages-list {
+  display: -ms-inline-grid;
+  display: inline-grid;
+  -ms-grid-columns: 4fr 3fr 4fr;
+  grid-template-columns: 4fr 3fr 4fr;
+  -webkit-column-gap: 50px;
+  -moz-column-gap: 50px;
+  column-gap: 50px;
+  row-gap: 147px;
+}
+
+.advantages-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: start;
+  text-align: start;
+}
+
+.advantages-list__item:nth-child(3n) {
+  padding: 20px 10px;
+}
+
+.advantages-list__item:nth-child(4n)::before,
+.advantages-list__item:nth-child(5n)::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  top: -71px;
+  left: 0;
+  background-color: rgba(209, 10, 66, 0.2);
+}
+
+.advantages-list__item:nth-child(5n)::before {
+  width: 99%;
+  left: 3px;
+}
+
+.advantages-list__item p {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 71px;
+  line-height: 71px;
+  font-weight: 700;
+  background: -o-linear-gradient(322.39deg, #d10a42 0%, #0041ca 45.58%);
+  background: linear-gradient(127.61deg, #d10a42 0%, #0041ca 45.58%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: start;
+  margin: 0 0 0 27px;
+}
+
+.advantages-list__item small {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #2e35ac;
+}
+
+.advantages-list__item:nth-child(2n) p {
+  margin-left: 3px;
+}
+
+.advantages-list__item:nth-child(4n) p {
+  margin-left: 20px;
+}
+
+.advantages-list__item:nth-child(5n) p {
+  margin-left: 3px;
+  margin-right: 2px;
+}
+
+.advantages-list__item dl {
+  margin: 5px 0 0 30px;
+}
+
+.advantages-list__item dt {
+  font-size: 22px;
+  line-height: 33px;
+  font-weight: 700;
+  color: #102654;
+  margin: 0 0 5px 0;
+}
+
+.advantages-list__item dd {
+  font-size: 16px;
+  line-height: 22.4px;
+  font-weight: 300;
+  color: #102654;
+  margin: 0;
+}
+
+.advantages-list__item--special {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1 / 3;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #1c3374;
+  margin: 11px 7px 5px 9px;
+  padding: 20px 10px;
+}
+
+.advantages-list__item--special > p {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 74px;
+  line-height: 74px;
+  font-weight: 700;
+  color: #ffffff;
+  padding-right: 6px;
+  padding-bottom: 3px;
+  margin: 0 auto 25px;
+}
+
+.advantages-list__item--special small {
+  font-size: 26px;
+  line-height: 39px;
+  font-weight: 700;
+  color: #ffffff;
+  padding-left: 6px;
+  padding-top: 3px;
+}
+
+.advantages-list__item--special dl {
+  margin: 0 20px;
+  padding-bottom: 3px;
+}
+
+.advantages-list__item--special dd {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #ffffff;
+  margin: 0 auto;
+}
+
+.advantages {
+  background-color: #f8f9fc;
+}
+
+.advantages__container {
+  padding-top: 118px;
+  padding-bottom: 115px;
+  text-align: center;
+}
+
+.advantages h2 {
+  margin-bottom: 59px;
+}
+
+.advantages__list {
+  margin: 0 60px;
+}
+
 .button {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -2116,17 +2307,6 @@ button,
   width: 100%;
 }
 
-.section h2 {
-  font-family: "Bebas Neue", "Arial", sans-serif;
-  font-size: 49px;
-  line-height: 49px;
-  font-weight: 700;
-  letter-spacing: 0.03em;
-  color: #102654;
-  text-transform: uppercase;
-  margin: 0;
-}
-
 .social-header__item {
   margin-bottom: 13px;
 }
@@ -2303,8 +2483,8 @@ button,
 .trainer-card:hover,
 .trainer-card:focus,
 .trainer-card:active {
-  -webkit-box-shadow: 0 0 35px rgba(42, 59, 99, 0.17);
-  box-shadow: 0 0 35px rgba(42, 59, 99, 0.17);
+  -webkit-box-shadow: 0 0 35px rgba(42, 59, 99, 0.2);
+  box-shadow: 0 0 35px rgba(42, 59, 99, 0.2);
 }
 
 .trainer-card:hover::after,
@@ -2501,6 +2681,95 @@ button,
 @media (max-width: 1199px) {
   .container {
     padding: 0 45px;
+  }
+
+  .section h2 {
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  .advantages-list {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    -webkit-column-gap: 30px;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
+    row-gap: 42px;
+  }
+
+  .advantages-list__item:nth-child(3n) {
+    margin: 0 118px;
+    padding: 34px 95px 20px;
+  }
+
+  .advantages-list__item:nth-child(4n)::before,
+  .advantages-list__item:nth-child(5n)::before {
+    content: none;
+  }
+
+  .advantages-list__item p {
+    font-size: 58px;
+    line-height: 60px;
+    margin: 0;
+  }
+
+  .advantages-list__item small {
+    line-height: 14px;
+  }
+
+  .advantages-list__item:nth-child(2n) p,
+  .advantages-list__item:nth-child(5n) p {
+    margin-left: 0;
+  }
+
+  .advantages-list__item dl {
+    margin-top: 1px;
+  }
+
+  .advantages-list__item dt {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 2px;
+  }
+
+  .advantages-list__item--special {
+    grid-column: 1 / -1;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2 / 3;
+    min-height: 239px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: start;
+  }
+
+  .advantages-list__item--special > p {
+    font-size: 74px;
+    line-height: 74px;
+    margin-bottom: 9px;
+  }
+
+  .advantages-list__item--special small {
+    font-size: 22px;
+    line-height: 31px;
+    padding-left: 5px;
+    padding-top: 0;
+  }
+
+  .advantages__container {
+    padding-top: 99px;
+    padding-bottom: 93px;
+  }
+
+  .advantages h2 {
+    margin-bottom: 42px;
+  }
+
+  .advantages__list {
+    margin: 0;
   }
 
   .button--white {
@@ -2769,11 +3038,6 @@ button,
     margin-right: 30px;
   }
 
-  .section h2 {
-    font-size: 42px;
-    line-height: 42px;
-  }
-
   .tab-time-list li:not(:last-child) {
     margin-right: 55px;
   }
@@ -2851,6 +3115,96 @@ button,
   .container {
     min-width: 320px;
     padding: 0 15px;
+  }
+
+  .section h2 {
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .advantages-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .advantages-list__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .advantages-list__item:not(:last-child) {
+    margin-bottom: 31px;
+  }
+
+  .advantages-list__item:nth-child(2n) {
+    margin-bottom: 42px;
+  }
+
+  .advantages-list__item:nth-child(4n) {
+    margin-bottom: 31px;
+  }
+
+  .advantages-list__item:nth-child(3n) {
+    margin: 0 -15px 40px;
+    padding: 38px 39px 10px;
+  }
+
+  .advantages-list__item p {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .advantages-list__item:nth-child(4n) p {
+    margin-bottom: 8px;
+  }
+
+  .advantages-list__item:nth-child(5n) p {
+    margin-top: 2px;
+    margin-left: 2px;
+  }
+
+  .advantages-list__item dl {
+    text-align: center;
+    margin: 0;
+    padding: 0 20px;
+  }
+
+  .advantages-list__item--special {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: start;
+  }
+
+  .advantages-list__item--special dl {
+    margin-bottom: 5px;
+  }
+
+  .advantages-list__item--special > p {
+    margin-bottom: 7px;
+  }
+
+  .advantages-list__item--special small {
+    padding-top: 0;
+    font-size: 22px;
+    line-height: 24px;
+  }
+
+  .advantages__container {
+    padding-top: 69px;
+    padding-bottom: 62px;
   }
 
   .button--white {
@@ -3063,11 +3417,6 @@ button,
   .navigation__item a {
     font-size: 16px;
     line-height: 19px;
-  }
-
-  .section h2 {
-    font-size: 32px;
-    line-height: 32px;
   }
 
   .tab-content-card {
