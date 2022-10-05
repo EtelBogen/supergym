@@ -1,6 +1,7 @@
 .button {
   display: inline-flex;
   vertical-align: baseline;
+  text-align: center;
   margin: 0;
   padding: 10px 20px;
 
@@ -32,7 +33,7 @@
   }
 
   &--white {
-    padding: 19px 55px;
+    padding: 19px 54px;
     justify-self: end;
 
     &:hover,
@@ -59,6 +60,7 @@
 
   &--underline {
     display: inline-block;
+    vertical-align: baseline;
     border: none;
     color: $color-resolution-blue;
     text-transform: uppercase;

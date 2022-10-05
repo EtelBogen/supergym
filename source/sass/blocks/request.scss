@@ -13,13 +13,13 @@
   margin: 0 0 0 auto;
 
   @include vp-1199 {
-    padding: 69px 163px 70px 133px;
+    padding: 71px 163px 69px 133px;
     max-width: none;
     margin: 0 auto;
   }
 
   @include vp-767 {
-    padding: 69px 15px 69px;
+    padding: 70px 15px 69px;
   }
 }
 
@@ -28,7 +28,7 @@
   margin: 0 0 44px;
 
   @include vp-1199 {
-    margin-bottom: 37px;
+    margin-bottom: 35px;
   }
 
   @include vp-767 {
@@ -88,4 +88,8 @@
   margin-top: 28px;
   width: 100%;
   padding: 16px 25px;
+
+  @include vp-767 {
+    margin-top: 27px;
+  }
 }

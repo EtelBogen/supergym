@@ -109,11 +109,11 @@
     align-items: center;
 
     &:not(:last-child) {
-      margin-bottom: 31px;
+      margin-bottom: 33px;
     }
 
     &:nth-child(2n) {
-      margin-bottom: 42px;
+      margin-bottom: 43px;
     }
 
     &:nth-child(4n) {
@@ -130,6 +130,10 @@
       margin-bottom: 10px;
     }
 
+    &:nth-child(2n) p {
+      margin-bottom: 9px;
+    }
+
     &:nth-child(4n) p {
       margin-bottom: 8px;
     }
@@ -137,6 +141,7 @@
     &:nth-child(5n) p {
       margin-top: 2px;
       margin-left: 2px;
+      margin-bottom: 8px;
     }
   }
 }

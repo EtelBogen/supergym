@@ -43,6 +43,6 @@ const sliderReviews = new Swiper('.reviews__slider', {
 });
 
 window.addEventListener('DOMContentLoaded', () => {
-  sliderTrainers();
-  sliderReviews();
+  sliderTrainers;
+  sliderReviews;
 });

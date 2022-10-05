@@ -12,7 +12,7 @@
 }
 
 .header__container {
-  padding-top: 30px;
+  padding-top: 28px;
   padding-bottom: 51px;
 
   @include vp-1199 {
@@ -21,7 +21,7 @@
   }
 
   @include vp-767 {
-    padding-top: 20px;
+    padding-top: 18px;
     padding-bottom: 79px;
   }
 }
@@ -38,7 +38,11 @@
 
   @include vp-1199 {
     margin-left: 0;
-    margin-top: 2px;
+    margin-top: 1px;
+  }
+
+  @include vp-767 {
+    margin-top: 0;
   }
 }
 
@@ -56,12 +60,14 @@
     font-size: 24px;
     line-height: 22px;
     letter-spacing: 0.02em;
+    margin-top: -3px;
   }
 
   @include vp-767 {
     font-size: 20px;
     line-height: 19px;
     padding-left: 90px;
+    margin-top: 0;
   }
 }
 
@@ -69,7 +75,7 @@
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
-  margin-top: -3px;
+  margin-top: -6px;
 }
 
 .header__description {
@@ -88,8 +94,8 @@
   @include vp-1199 {
     min-width: auto;
     width: 52%;
-    padding-top: 54px;
-    padding-right: 27px;
+    padding-top: 74px;
+    padding-right: 28px;
     padding-left: 30px;
   }
 
@@ -97,6 +103,7 @@
     width: 100%;
     padding-right: 0;
     padding-left: 0;
+    padding-top: 76px;
   }
 }
 
@@ -129,7 +136,7 @@
   font-weight: 700;
   letter-spacing: 0.03em;
   -webkit-text-stroke: 3px $color-default-white;
-  padding-top: 15px;
+  padding-top: 10px;
 
   @include vp-1199 {
     font-size: 86px;
@@ -140,7 +147,7 @@
   @include vp-767 {
     font-size: 78px;
     line-height: 78px;
-    padding-top: 11px;
+    padding-top: 10px;
   }
 }
 
@@ -153,25 +160,36 @@
   right: 330px;
 
   @include vp-1199 {
-    top: 187px;
+    top: 208px;
     right: 240px;
   }
 
   @include vp-767 {
-    top: 175px;
+    top: 197px;
     right: 177px;
   }
 }
 
 .header__button {
+  font-family: $ff-roboto-condensed;
   width: 234px;
-  margin-top: 56px;
+  margin-top: 51px;
   margin-left: auto;
+
+  @include vp-1199 {
+    width: 186px;
+    margin-top: 36px;
+  }
+
+  @include vp-767 {
+    margin-top: 38px;
+  }
 }
 
 .header__image-wrapper {
   @include vp-1199 {
-    margin-top: 21px;
+    width: 324px;
+    margin-top: 22px;
   }
 
   @include vp-767 {
@@ -180,13 +198,15 @@
 }
 
 .header__image-wrapper img {
-  width: 500px;
+  width: 504px;
   height: 556px;
+  margin-left: -4px;
 
   @include vp-1199 {
     object-fit: cover;
     height: 390px;
     width: 324px;
+    margin-left: 0;
   }
 }
 
