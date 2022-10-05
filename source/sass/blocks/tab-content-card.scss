@@ -6,6 +6,10 @@
   background-color: $color-default-white;
   border: 7px solid transparent;
 
+  &:focus {
+    outline-color: $color-grey-02;
+  }
+
   &:hover {
     border-image: $crimson-to-smalt;
     border-image-slice: 1;
@@ -20,6 +24,18 @@
   @include vp-767 {
     min-height: 384px;
     padding: 44px 20px 20px;
+  }
+}
+
+.tab-content-card h3 {
+  font-size: 26px;
+  line-height: 28px;
+  margin: 0 0 11px;
+  color: $color-sapphire;
+
+  @include vp-767 {
+    font-size: 22px;
+    line-height: 24px;
   }
 }
 
@@ -81,14 +97,10 @@
   }
 }
 
-.tab-content-card h3 {
-  font-size: 26px;
-  line-height: 28px;
-  margin: 0 0 11px;
-  color: $color-sapphire;
-
-  @include vp-767 {
-    font-size: 22px;
-    line-height: 24px;
+.tab-content-card a {
+  &:focus {
+    color: $color-default-white;
+    background: $torch-red-to-cobalt;
+    box-shadow: none;
   }
 }

@@ -48,8 +48,10 @@
   cursor: pointer;
   user-select: none;
 
-  &:hover {
+  &:hover,
+  &:focus {
     opacity: 0.8;
+    outline-color: $color-grey-02;
   }
 
   &--active {

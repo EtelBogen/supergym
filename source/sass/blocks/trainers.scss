@@ -1,5 +1,4 @@
 .trainers {
-  grid-column: 1 / 3;
   padding-top: 118px;
   padding-bottom: 120px;
   max-width: 100%;
@@ -17,11 +16,9 @@
 
 .trainers h2 {
   margin-bottom: 52px;
-  margin-left: 58px;
 
   @include vp-1199 {
     text-align: center;
-    margin-left: 0;
     margin-bottom: 41px;
   }
 
@@ -68,8 +65,7 @@
   }
 }
 
-.trainers__swiper-button-next,
-.trainers__swiper-button-prev {
+.trainers__slider-button {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -96,33 +92,33 @@
     height: 19px;
     background-position: center;
   }
-}
 
-.trainers__swiper-button-next {
-  right: 0;
+  &--next {
+    right: 0;
 
-  @include vp-1199 {
-    transform: translateY(-64%);
-    right: 3px;
+    @include vp-1199 {
+      transform: translateY(-64%);
+      right: 3px;
+    }
+
+    @include vp-767 {
+      margin-right: 12px;
+      transform: translateY(-47%);
+    }
   }
 
-  @include vp-767 {
-    margin-right: 12px;
-    transform: translateY(-47%);
-  }
-}
+  &--prev {
+    left: 0;
+    transform: rotate(180deg) translateY(50%);
 
-.trainers__swiper-button-prev {
-  left: 0;
-  transform: rotate(180deg) translateY(50%);
+    @include vp-1199 {
+      transform: rotate(180deg) translateY(64%);
+      left: 3px;
+    }
 
-  @include vp-1199 {
-    transform: rotate(180deg) translateY(64%);
-    left: 3px;
-  }
-
-  @include vp-767 {
-    margin-left: 12px;
-    transform: rotate(180deg) translateY(47%);
+    @include vp-767 {
+      margin-left: 12px;
+      transform: rotate(180deg) translateY(47%);
+    }
   }
 }

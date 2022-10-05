@@ -1,5 +1,8 @@
 import {iosVhFix} from './utils/ios-vh-fix';
-import {initModals} from './modules/modals/init-modals';
+import {initTabs} from './modules/tabs-switcher';
+import {initVideo} from './modules/video';
+import {addScrollSmooth} from './modules/scroll-smooth';
+import {checkPhoneSpelling} from './modules/phone';
 
 // ---------------------------------
 
@@ -9,6 +12,10 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   iosVhFix();
+  initTabs();
+  initVideo();
+  addScrollSmooth();
+  checkPhoneSpelling();
 
   // Modules
   // ---------------------------------
@@ -16,7 +23,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
-    initModals();
+
   });
 });
 

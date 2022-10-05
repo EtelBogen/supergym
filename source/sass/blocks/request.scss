@@ -58,6 +58,7 @@
   border-bottom: 1px solid $color-light-slate-grey;
   background-color: $color-transparent;
   color: $color-default-white;
+  outline-color: $color-light-slate-grey;
 
   &::placeholder {
     font-size: 14px;

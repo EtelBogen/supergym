@@ -97,6 +97,15 @@
   margin: auto auto 0 0;
   justify-self: start;
 
+  &:hover,
+  &:focus {
+    outline: 2px solid $color-resolution-blue;
+    outline-offset: 3px;
+    border-radius: 1px;
+    box-shadow: none;
+    transition: none;
+  }
+
   @include vp-767 {
     margin: auto 0 0;
   }
@@ -141,6 +150,11 @@
     align-self: end;
     width: fit-content;
     margin: 0 0 45px 45px;
+
+    &:hover,
+    &:focus {
+      outline-color: $color-default-white;
+    }
   }
 
   @include vp-1199 {

@@ -71,3 +71,20 @@
     margin-right: 11px;
   }
 }
+
+.footer__social-list a {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: box-shadow 0.3s;
+  outline-color: transparent;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 0 10px $color-default-white;
+    transition: all 0.3s;
+  }
+}

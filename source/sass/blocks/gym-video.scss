@@ -69,9 +69,11 @@
   z-index: 1;
   cursor: pointer;
 
-  &:hover {
+  &:hover,
+  &:focus {
     scale: 1.05;
-    opacity: 0.8;
+    outline: 2px solid $color-default-white;
+    outline-offset: 3px;
   }
 
   @include vp-1199 {

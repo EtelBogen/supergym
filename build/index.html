@@ -8,7 +8,7 @@
     <title>Supergym</title>
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="preload" href="fonts/BebasNeue-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="fonts/BebasNeue-Bold.woff2" as="font" type="font/woff2" ccrossorigin="anonymous">
+    <link rel="preload" href="fonts/BebasNeue-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="fonts/RobotoCondensed-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="fonts/Roboto-Condensed.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="fonts/RobotoCondensed-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
@@ -146,7 +146,7 @@
             </ul>
 
             <ul class="gym-membership__tab-content-list gym-membership__tab-content-list--active list-reset" id="tab_1-month">
-              <li class="tab-content-card">
+              <li class="tab-content-card" tabindex="0">
                 <h3>
                   С тренером
                 </h3>
@@ -161,7 +161,7 @@
                 </p>
                 <a class="button button--sapphire" href="#">Купить абонемент</a>
               </li>
-              <li class="tab-content-card">
+              <li class="tab-content-card" tabindex="0">
                 <h3>
                   Дневной
                 </h3>
@@ -179,7 +179,7 @@
                 </p>
                 <a class="button button--sapphire" href="#">Купить абонемент</a>
               </li>
-              <li class="tab-content-card">
+              <li class="tab-content-card" tabindex="0">
                 <h3>
                   Полный день
                 </h3>
@@ -298,7 +298,7 @@
                   <time datetime="22:00">22:00</time>
                 </p>
                 <p class="tab-content-card__price" data-price="19000">
-                 19000
+                  19000
                   <svg width="30" height="42" xmlns="http://www.w3.org/2000/svg" aria-label="рублей">
                     <use xlink:href="img/sprite_auto.svg#icon-ruble"></use>
                   </svg>
@@ -338,18 +338,20 @@
               <picture>
                 <source type="image/webp" srcset="img/jpg/super-games@1x.webp 1x, img/jpg/super-games@2x.webp 2x">
                 <!-- 1x: 660px; 2x: 1320px-->
-                <img src="img/jpg/super-games@1x.jpg" rcset="img/jpg/super-games@2x.jpg 2x" width="660" height="500" alt="Иллюстрация со спортсменом.">
+                <img src="img/jpg/super-games@1x.jpg" srcset="img/jpg/super-games@2x.jpg 2x" width="660" height="500" alt="Иллюстрация со спортсменом.">
               </picture>
             </div>
           </div>
         </section>
 
         <section class="trainers section" id="trainers">
-          <h2>
-            Тренеры
-          </h2>
+          <div class="container">
+            <h2>
+              Тренеры
+            </h2>
+          </div>
           <div class="trainers__slider-wrapper">
-            <button type="button" class="trainers__swiper-button-prev">
+            <button type="button" class="trainers__slider-button trainers__slider-button--prev">
               <span class="visually-hidden">Листать назад</span>
             </button>
             <div class="swiper trainers__slider">
@@ -528,6 +530,7 @@
                     </div>
                   </div>
                 </div>
+
                 <div class="swiper-slide trainers__slide">
                   <div class="trainer-card">
                     <div>
@@ -588,7 +591,7 @@
 
               </div>
             </div>
-            <button type="button" class="trainers__swiper-button-next">
+            <button type="button" class="trainers__slider-button trainers__slider-button--next">
               <span class="visually-hidden">Листать вперед</span>
             </button>
           </div>
@@ -718,6 +721,7 @@
               <button type="button" class="reviews__slider-button reviews__slider-button--prev">
                 <span class="visually-hidden">Перейти к предыдущему отзыву.</span>
               </button>
+
               <div class="swiper reviews__slider">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
@@ -725,7 +729,7 @@
                       <div>
                         <picture>
                           <source type="image/webp" srcset="img/jpg/reviews-anna-orlova@1x.webp 1x, img/jpg/reviews-anna-orlova@2x.webp 2x">
-                           <!-- 1x: 80px; 2x: 160px-->
+                          <!-- 1x: 80px; 2x: 160px-->
                           <img src="img/jpg/reviews-anna-orlova@1x.jpg" srcset="img/jpg/reviews-anna-orlova@2x.jpg 2x" width="80" height="80" alt="Фото Анны Орловой.">
                         </picture>
                       </div>
@@ -738,12 +742,13 @@
                       </p>
                     </div>
                   </div>
+
                   <div class="swiper-slide">
                     <div class="review-card">
                       <div>
                         <picture>
                           <source type="image/webp" srcset="img/jpg/reviews-anna-orlova@1x.webp 1x, img/jpg/reviews-anna-orlova@2x.webp 2x">
-                           <!-- 1x: 80px; 2x: 160px-->
+                          <!-- 1x: 80px; 2x: 160px-->
                           <img src="img/jpg/reviews-anna-orlova@1x.jpg" srcset="img/jpg/reviews-anna-orlova@2x.jpg 2x" width="80" height="80" alt="Фото Анны Орловой.">
                         </picture>
                       </div>
@@ -758,6 +763,7 @@
                   </div>
                 </div>
               </div>
+
               <button type="button" class="reviews__slider-button reviews__slider-button--next">
                 <span class="visually-hidden">Перейти к следующему отзыву.</span>
               </button>
@@ -774,8 +780,8 @@
               <form class="form request__form" action="https://echo.htmlacademy.ru/" method="get">
                 <label class="visually-hidden" for="name">Введите Ваше имя</label>
                 <input type="text" id="name" name="name" placeholder="Имя" required>
-                <label class="visually-hidden" for="phone">Введите телефон для связи</label>
-                <input type="tel" id="phone" name="client-tel" data-tel-input maxlength="14" pattern=".{14}" title="Номер телефона должен состоять из 11 цифр" placeholder="Телефон" required>
+                <label class="visually-hidden" for="client-phone">Введите телефон для связи</label>
+                <input type="tel" id="client-phone" name="client-phone" data-tel-input maxlength="14" pattern="[\+]{1}[7]{1}[\(]{1}[0-9]{3}[\)]{1}[0-9]{7}" title="Номер телефона должен состоять из 11 цифр" placeholder="Телефон" required>
                 <button class="button button--white" type="submit">
                   Отправить
                 </button>
@@ -837,7 +843,7 @@
 
             <ul class="footer__navigation-list navigation list-reset">
               <li class="navigation__item">
-                <a href="#gym">
+                <a href="#gym" data-anchor>
                   Услуги
                 </a>
               </li>
