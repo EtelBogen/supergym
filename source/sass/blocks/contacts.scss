@@ -39,9 +39,8 @@
 .contacts__list {
   position: relative;
   display: grid;
-  grid-auto-flow: column;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   column-gap: 20px;
   row-gap: 17px;
   margin-left: 4px;
@@ -77,14 +76,14 @@
 }
 
 .contacts__item {
-  &:nth-child(3n),
-  &:nth-child(4n) {
+  &:nth-child(4n),
+  &:nth-child(4n+2) {
     padding-left: 52px;
   }
 
   @include vp-1199 {
-    &:nth-child(3n),
-    &:nth-child(4n) {
+    &:nth-child(4n),
+    &:nth-child(4n+2) {
       padding-left: 40px;
     }
   }
@@ -94,9 +93,21 @@
       margin-bottom: 19px;
     }
 
-    &:nth-child(3n),
-    &:nth-child(4n) {
+    &:nth-child(4n),
+    &:nth-child(4n+2) {
       padding-left: 0;
+    }
+
+    &:nth-child(4n+3) {
+      order: 1;
+    }
+
+    &:nth-child(4n+2) {
+      order: 2;
+    }
+
+    &:nth-child(n+4) {
+      order: 3;
     }
   }
 }
