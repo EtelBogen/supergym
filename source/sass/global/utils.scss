@@ -16,6 +16,15 @@
     flex-grow: 1;
   }
 }
+.wrapper__request-contacts {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+
+  @include vp-1199 {
+    flex-direction: column;
+  }
+}
 
 .rouble {
   font-family: $ff-rouble;

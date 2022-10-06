@@ -12,13 +12,4 @@
     min-width: 320px;
     padding: 0 15px;
   }
-
-  &--wrapper {
-    display: flex;
-    flex-direction: row;
-
-    @include vp-1199 {
-      flex-direction: column;
-    }
-  }
 }

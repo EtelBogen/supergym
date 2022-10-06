@@ -1,7 +1,6 @@
 // Swiper 7.4.1
 import './vendor/swiper';
 
-// init Swiper:
 const sliderTrainers = new Swiper('.trainers__slider', {
   slidesPerView: 1,
   loop: true,
@@ -11,24 +10,25 @@ const sliderTrainers = new Swiper('.trainers__slider', {
     // when window width is >= 1200px
     1200: {
       slidesPerView: 4,
-      spaceBetween: 40
+      spaceBetween: 40,
     },
     // when window width is >= 768px
     768: {
       slidesPerView: 2,
-      spaceBetween: 30
+      spaceBetween: 30,
     },
     // when window width is >= 320px
     320: {
-      slidesPerView: 1
-    }
+      slidesPerView: 1,
+    },
   },
   // Navigation arrows
   navigation: {
     nextEl: '.trainers__slider-button--next',
-    prevEl: '.trainers__slider-button--prev'
-  }
+    prevEl: '.trainers__slider-button--prev',
+  },
 });
+
 
 const sliderReviews = new Swiper('.reviews__slider', {
   direction: 'horizontal',
@@ -38,11 +38,8 @@ const sliderReviews = new Swiper('.reviews__slider', {
   // Navigation arrows
   navigation: {
     nextEl: '.reviews__slider-button--next',
-    prevEl: '.reviews__slider-button--prev'
-  }
+    prevEl: '.reviews__slider-button--prev',
+  },
 });
 
-window.addEventListener('DOMContentLoaded', () => {
-  sliderTrainers;
-  sliderReviews;
-});
+export {sliderTrainers, sliderReviews};

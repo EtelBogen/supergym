@@ -1467,6 +1467,17 @@ button,
   flex-grow: 1;
 }
 
+.wrapper__request-contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding: 0;
+}
+
 .rouble {
   font-family: "Rouble", "Arial", sans-serif;
   /* stylelint-disable */
@@ -1527,16 +1538,6 @@ button,
   padding: 0 103px;
 }
 
-.container--wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
 .section h2 {
   font-family: "Bebas Neue", "Arial", sans-serif;
   font-size: 49px;
@@ -1551,6 +1552,7 @@ button,
 .advantages-list {
   display: -ms-inline-grid;
   display: inline-grid;
+  vertical-align: baseline;
   -ms-grid-columns: 4fr 3fr 4fr;
   grid-template-columns: 4fr 3fr 4fr;
   -webkit-column-gap: 50px;
@@ -3152,15 +3154,15 @@ button,
 } */
 
 @media (max-width: 1199px) {
-  .container {
-    padding: 0 45px;
-  }
-
-  .container--wrapper {
+  .wrapper__request-contacts {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+  }
+
+  .container {
+    padding: 0 45px;
   }
 
   .section h2 {

@@ -1,5 +1,6 @@
 .advantages-list {
   display: inline-grid;
+  vertical-align: baseline;
   grid-template-columns: 4fr 3fr 4fr;
   column-gap: 50px;
   row-gap: 147px;
