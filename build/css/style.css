@@ -3701,6 +3701,10 @@ button,
     padding-right: 0;
   }
 
+  .trainer-card {
+    width: 268px;
+  }
+
   .trainer-card:hover h3,
   .trainer-card:focus h3,
   .trainer-card:active h3 {
@@ -4362,6 +4366,7 @@ button,
 
   .trainer-card {
     height: 274px;
+    width: 226px;
   }
 
   .trainer-card:hover h3,
