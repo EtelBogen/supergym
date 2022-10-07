@@ -13,8 +13,7 @@
   }
 
   @include vp-767 {
-    padding-top: 70px;
-    padding-bottom: 62px;
+    padding: 70px 0 62px;
   }
 }
 
@@ -26,10 +25,127 @@
   }
 }
 
-.advantages__list {
+.advantages__wrapper {
+  position: relative;
+  display: grid;
+  grid-template-rows: min-content min-content;
+  row-gap: 147px;
   margin: 0 60px;
 
   @include vp-1199 {
+    grid-template-rows: min-content min-content min-content;
+    row-gap: 42px;
     margin: 0;
+  }
+
+  @include vp-767 {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0;
+  }
+}
+
+.advantages__block--special {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  background-color: $color-resolution-blue;
+  height: 94%;
+  width: 240px;
+  min-height: 307px;
+  left: 50%;
+  margin-left: -119px;
+  margin-top: 11px;
+
+  & > p {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 74px;
+    line-height: 74px;
+    font-weight: 700;
+    color: $color-default-white;
+    padding-right: 6px;
+    padding-bottom: 7px;
+    margin: 0 auto 25px;
+  }
+
+  & small {
+    font-size: 26px;
+    line-height: 39px;
+    font-weight: 700;
+    color: $color-default-white;
+    padding-left: 6px;
+    padding-top: 3px;
+  }
+
+  & dl {
+    margin: 0 20px;
+    padding-bottom: 3px;
+  }
+
+  & dd {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: $color-default-white;
+    margin: 0 auto;
+  }
+
+  @include vp-1199 {
+    position: static;
+    min-height: 239px;
+    min-width: 442px;
+    align-items: center;
+    justify-content: start;
+    margin: 0 auto;
+
+    & > p {
+      font-size: 74px;
+      line-height: 74px;
+      margin-bottom: 9px;
+      margin-top: 34px;
+    }
+
+    & small {
+      font-size: 22px;
+      line-height: 31px;
+      padding-left: 5px;
+      padding-top: 0;
+    }
+
+    & dl {
+      padding: 0 93px 17px;
+    }
+  }
+
+  @include vp-767 {
+    min-height: 239px;
+    min-width: 320px;
+    width: 100%;
+    height: 100%;
+
+    margin: 0 0 39px;
+    padding: 38px 39px 10px;
+
+    & dl {
+      margin-bottom: 5px;
+      padding: 0;
+    }
+
+    & > p {
+      margin: 0;
+      padding-right: 0;
+      padding-bottom: 12px;;
+    }
+
+    & small {
+      padding-top: 0;
+      font-size: 22px;
+      line-height: 24px;
+    }
   }
 }
