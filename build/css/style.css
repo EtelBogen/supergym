@@ -4421,6 +4421,7 @@ button,
     width: 16px;
     height: 19px;
     background-position: center;
+    margin-top: -9px;
   }
 
   .trainers__slider-button--next {
