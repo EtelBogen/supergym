@@ -2017,6 +2017,10 @@ button,
   margin: 13px 0 0 7px;
 }
 
+.events__image-wrapper {
+  background-color: #103aae;
+}
+
 .events__image-wrapper img {
   bottom: 0;
 }
@@ -2261,6 +2265,7 @@ button,
   max-width: 660px;
   min-height: 401px;
   margin-bottom: 20px;
+  background-color: #b6bdcc;
 }
 
 .gym__image-wrapper img {
@@ -2281,6 +2286,7 @@ button,
   -ms-transform: translateX(-39.3%);
   transform: translateX(-39.3%);
   top: 408px;
+  background-color: rgba(16, 38, 84, 0.5);
 }
 
 .header {
@@ -2392,10 +2398,14 @@ button,
   margin-left: auto;
 }
 
-.header__image-wrapper img {
-  width: 504px;
-  height: 556px;
+.header__image-wrapper {
+  background-color: #003d85;
   margin-left: -4px;
+}
+
+.header__image-wrapper img {
+  width: 500px;
+  height: 556px;
 }
 
 .header__social {
@@ -2598,6 +2608,7 @@ button,
   overflow: hidden;
   max-width: 280px;
   max-height: 462px;
+  background-color: #003eb7;
 }
 
 .promotions__image-wrapper img {
@@ -3020,6 +3031,7 @@ button,
   top: 0;
   -o-object-fit: cover;
   object-fit: cover;
+  background-color: #74819c;
 }
 
 .trainer-card__description {
@@ -3568,6 +3580,7 @@ button,
   .header__image-wrapper {
     width: 324px;
     margin-top: 22px;
+    margin-left: 0;
   }
 
   .header__image-wrapper img {
@@ -3575,7 +3588,6 @@ button,
     object-fit: cover;
     height: 390px;
     width: 324px;
-    margin-left: 0;
   }
 
   .header__social {

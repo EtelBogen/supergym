@@ -174,6 +174,8 @@
 }
 
 .events__image-wrapper {
+  background-color: $color-egyptian-blue;
+  
   @include vp-767 {
     position: relative;
     overflow: hidden;

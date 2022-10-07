@@ -94,6 +94,7 @@
   max-width: 660px;
   min-height: 401px;
   margin-bottom: 20px;
+  background-color: $color-spindle;
 
   @include vp-1199 {
     width: 100%;
@@ -144,6 +145,7 @@
   left: 50%;
   transform: translateX(-39.3%);
   top: 408px;
+  background-color: $color-sapphire-05;
 
   @include vp-1199 {
     top: auto;

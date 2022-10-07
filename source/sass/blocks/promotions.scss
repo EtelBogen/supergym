@@ -205,6 +205,7 @@
   overflow: hidden;
   max-width: 280px;
   max-height: 462px;
+  background-color: $color-cobalt;
 
   @include vp-1199 {
     min-width: 399px;
