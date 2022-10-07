@@ -34,7 +34,7 @@ const sliderReviews = new Swiper('.reviews__slider', {
   direction: 'horizontal',
   slidesPerView: 1,
   spaceBetween: 0,
-  loop: true,
+  loop: false,
   // Navigation arrows
   navigation: {
     nextEl: '.reviews__slider-button--next',
