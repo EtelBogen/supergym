@@ -32,6 +32,7 @@ const sliderTrainers = new Swiper('.trainers__slider', {
 
 const sliderReviews = new Swiper('.reviews__slider', {
   direction: 'horizontal',
+  autoHeight: true,
   slidesPerView: 1,
   spaceBetween: 0,
   loop: false,

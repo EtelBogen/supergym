@@ -60,9 +60,6 @@
 }
 
 .review-card__text {
-  height: 90px;
-  overflow-y: auto;
-
   @include vp-767 {
     height: 179px;
     grid-column: 1 / 3;

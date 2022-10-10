@@ -2742,11 +2742,6 @@ button,
   margin: 0 0 12px;
 }
 
-.review-card__text {
-  height: 90px;
-  overflow-y: auto;
-}
-
 .review-card p {
   font-size: 16px;
   line-height: 22.4px;
@@ -3061,7 +3056,7 @@ button,
   align-items: center;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
-  justify-content: end;
+  justify-content: flex-end;
   height: 294px;
   padding: 55px 25px 26px;
   z-index: 1;
