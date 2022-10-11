@@ -5,7 +5,6 @@ const sliderTrainers = new Swiper('.trainers__slider', {
   slidesPerView: 1,
   loop: true,
   direction: 'horizontal',
-  loopFillGroupWithBlank: false,
   breakpoints: {
     // when window width is >= 1200px
     1200: {
@@ -29,6 +28,7 @@ const sliderTrainers = new Swiper('.trainers__slider', {
   },
 });
 
+swiper.activeindex = 0;
 
 const sliderReviews = new Swiper('.reviews__slider', {
   direction: 'horizontal',

@@ -39,6 +39,8 @@
     display: flex;
     flex-direction: column;
     gap: 0;
+    max-width: 399px;
+    margin: 0 auto;
   }
 }
 
@@ -214,7 +216,7 @@
   @include vp-767 {
     min-width: 290px;
     min-height: 299px;
-    margin-right: auto;
+    max-width: max-content;
   }
 }
 
@@ -227,7 +229,8 @@
   }
 
   @include vp-767 {
-    width: 290px;
-    height: 299px;
+    min-width: 290px;
+    min-height: 299px;
+    width: 100%;
   }
 }

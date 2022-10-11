@@ -62,6 +62,7 @@
   text-align: end;
   display: flex;
   flex-wrap: wrap;
+  min-width: 108px;
   width: 108px;
 
   @include vp-767 {

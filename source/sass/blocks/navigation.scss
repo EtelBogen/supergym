@@ -1,7 +1,6 @@
 .navigation {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   margin-left: 58px;
 
   @include vp-1199 {

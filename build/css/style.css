@@ -2069,6 +2069,7 @@ button,
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  min-width: 108px;
   width: 108px;
 }
 
@@ -2442,9 +2443,6 @@ button,
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   margin-left: 58px;
 }
 
@@ -2472,7 +2470,6 @@ button,
   font-weight: 400;
   color: #102654;
   min-width: 320px;
-  width: 100%;
 }
 
 .promotions__container {
@@ -4159,6 +4156,8 @@ button,
     -ms-flex-direction: column;
     flex-direction: column;
     gap: 0;
+    max-width: 399px;
+    margin: 0 auto;
   }
 
   .promotions__card {
@@ -4225,12 +4224,15 @@ button,
   .promotions__image-wrapper {
     min-width: 290px;
     min-height: 299px;
-    margin-right: auto;
+    max-width: -webkit-max-content;
+    max-width: -moz-max-content;
+    max-width: max-content;
   }
 
   .promotions__image-wrapper img {
-    width: 290px;
-    height: 299px;
+    min-width: 290px;
+    min-height: 299px;
+    width: 100%;
   }
 
   .request__container {
